@@ -2,9 +2,16 @@ package lk.cvgen.controller;
 
 import javafx.event.ActionEvent;
 import javafx.scene.input.MouseEvent;
+import lk.cvgen.commons.Commons;
+
+import java.io.IOException;
+
 
 public class HomeFormController {
-    public void btnGenSLTemplateOnAction(MouseEvent mouseEvent) {
+    Commons com = new Commons();
+
+    public void btnGenSLTemplateOnAction(MouseEvent mouseEvent) throws IOException {
+        com.setUI("");
     }
 
     public void btnGenUSATemplateOnAction(MouseEvent mouseEvent) {
