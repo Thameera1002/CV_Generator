@@ -1,11 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.cvgen.controller.HomeFormController">
+<AnchorPane prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.cvgen.controller.HomeFormController">
    <children>
-      <Button layoutX="269.0" layoutY="187.0" mnemonicParsing="false" text="Button" />
+      <ImageView fitHeight="450.0" fitWidth="700.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/bg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="15.0" text="Welcome to the CV Generator !" textFill="#2f2929">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Separator layoutX="12.0" layoutY="62.0" prefHeight="4.0" prefWidth="677.0" />
+      <Label layoutX="119.0" layoutY="89.0" text="Please select the region, where you want to generate the CV.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="133.0" fitWidth="124.0" layoutX="26.0" layoutY="149.0" onMouseClicked="#btnGenSLTemplateOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/lkicon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="133.0" fitWidth="124.0" layoutX="192.0" layoutY="149.0" onMouseClicked="#btnGenUSATemplateOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/usaicon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="133.0" fitWidth="124.0" layoutX="364.0" layoutY="149.0" onMouseClicked="#btnGenUKTemplateOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/ukicon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="133.0" fitWidth="124.0" layoutX="539.0" layoutY="149.0" onMouseClicked="#btnGenUAETemplateOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/uaeicon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="54.0" layoutY="298.0" text="Sri Lanka">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="239.0" layoutY="298.0" text="USA">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="416.0" layoutY="298.0" text="UK">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="586.0" layoutY="298.0" text="UAE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="59.0" layoutY="375.0" text="If you need to Generate the CV for other Europe / Middle Easte country ?" textFill="#e67e22" />
+      <JFXButton layoutX="547.0" layoutY="370.0" onAction="#btnGenOtherTemplateOnAction" style="-fx-background-color: #16a085;" text="Click Here !" textFill="WHITE" />
    </children>
 </AnchorPane>
